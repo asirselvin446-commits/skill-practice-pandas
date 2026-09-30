@@ -174,21 +174,17 @@ joined_dataset = base_indexed.join(records_indexed)
 print("\n--- Index Joined Dataset ---")
 print(joined_dataset)
 
-inventory = pd.DataFrame({
-    "ItemCode": ["SKU-001", "SKU-002", "SKU-003", "SKU-004", "SKU-005"],
-    "ItemName": ["Mechanical Keyboard", "Wireless Mouse", "USB-C Dock", "IPS Monitor", "Webcam HD"],
-    "Category": ["Peripherals", "Peripherals", "Accessories", "Displays", "Accessories"],
-    "Stock": [15, 42, 8, 12, 27],
-    "UnitPrice": [4500, 1800, 6200, 18500, 3200]
-})
-
-inventory["InventoryValue"] = inventory["Stock"] * inventory["UnitPrice"]
-print("\n--- Inventory Data ---")
+inventory = pd.read_csv("inventory_data.csv")
+print("\n--- Ingested Kaggle Inventory Dataset ---")
 print(inventory)
 
-inventory.to_csv("inventory_data.csv", index=False)
-loaded_csv = pd.read_csv("inventory_data.csv")
-print("\n--- Re-ingested from CSV ---")
+inventory["InventoryValue"] = (inventory["Stock"] * inventory["UnitPrice"]).round(2)
+print("\n--- Inventory Summary with Calculated Valuation ---")
+print(inventory.head())
+
+inventory.to_csv("inventory_processed.csv", index=False)
+loaded_csv = pd.read_csv("inventory_processed.csv")
+print("\n--- Re-ingested from Processed CSV ---")
 print(loaded_csv.head(3))
 
 try:

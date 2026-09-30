@@ -1,0 +1,16 @@
+ItemCode,ItemName,Category,Stock,UnitPrice,InventoryValue
+SKU-1001,Sony WH-1000XM5 Wireless Headphones,Audio,34,399.99,13599.66
+SKU-1002,Apple MacBook Air M2 13-inch,Computers,18,1099.0,19782.0
+SKU-1003,Samsung Galaxy S24 Ultra 256GB,Smartphones,25,1299.99,32499.75
+SKU-1004,Dell UltraSharp 27 4K USB-C Hub Monitor,Displays,15,619.99,9299.85
+SKU-1005,Logitech MX Master 3S Wireless Mouse,Peripherals,62,99.99,6199.38
+SKU-1006,Keychron Q1 Pro Mechanical Keyboard,Peripherals,41,199.0,8159.0
+SKU-1007,Anker 737 Power Bank PowerCore 24K,Accessories,85,149.99,12749.15
+SKU-1008,LG C3 55-inch OLED 4K TV,Displays,9,1496.99,13472.91
+SKU-1009,Bose QuietComfort 45 Headphones,Audio,28,329.0,9212.0
+SKU-1010,SanDisk 1TB Extreme Portable SSD,Storage,53,109.99,5829.47
+SKU-1011,ASUS ROG Zephyrus G16 Gaming Laptop,Computers,12,1999.99,23999.88
+SKU-1012,Google Pixel 8 Pro 128GB,Smartphones,22,999.0,21978.0
+SKU-1013,CalDigit TS4 Thunderbolt 4 Dock,Accessories,19,399.95,7599.05
+SKU-1014,Samsung 990 PRO PCIe 4.0 SSD 2TB,Storage,47,179.99,8459.53
+SKU-1015,Elgato Stream Deck MK.2 Studio Controller,Peripherals,31,149.99,4649.69
